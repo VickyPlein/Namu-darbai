@@ -22,43 +22,46 @@ class Trupmena {
         this.#skaitiklis = skaitiklis;
         this.#daliklis = daliklis;
     }
-}
 
-// 2. Sukurkime klasei setter‘ius ir getter‘ius
+    // 2. Sukurkime klasei setter‘ius ir getter‘ius
 
     set sveikojiDalis(sveikojiDalis) {
-    this.#sveikojiDalis = sveikojiDalis;
-}
-
-    set skaitiklis(skaitiklis) {
-    this.#skaitiklis = skaitiklis;
-}
-
-    set daliklis(daliklis) {
-    this.#daliklis = daliklis;
-}
+        this.#sveikojiDalis = sveikojiDalis;
+    }
 
     get sveikojiDalis() {
-    return this.#sveikojiDalis;
-}
+        return this.#sveikojiDalis;
+    }
+
+    set skaitiklis(skaitiklis) {
+        this.#skaitiklis = skaitiklis;
+    }
 
     get skaitiklis() {
-    return this.#skaitiklis;
-}
+        return this.#skaitiklis;
+    }
+
+    set daliklis(daliklis) {
+        this.#daliklis = daliklis;
+    }
 
     get daliklis() {
-    return this.#daliklis;
-}
+        return this.#daliklis;
+    }
 
-// 3. Klasei Trupmena sukurkime metodą toString kuris gražintų trupmeną tokiu formatu: 
-//sveikojiDalis skaitiklis / daliklis(pvz.: 1 2 / 5)
 
-toString() {
-    return `${this.#sveikojiDalis} ${this.#skaitiklis} / ${this.#daliklis}`;
-}
 
-//Ištestuokime programinį kodą sukurdami objektą, suteikime kintamiesiems reikšmes ir išveskime rezultatą.
+    // 3. Klasei Trupmena sukurkime metodą toString kuris gražintų trupmeną tokiu formatu: 
+    //sveikojiDalis skaitiklis / daliklis(pvz.: 1 2 / 5)
 
-pridetiInt(sveikasisSkaicius) {
-    return this.sveikojiDalis += sveikasisSkaicius;
+    toString() {
+        return `${this.#sveikojiDalis} ${this.#skaitiklis} / ${this.#daliklis}`;
+    }
+
+
+    //Ištestuokime programinį kodą sukurdami objektą, suteikime kintamiesiems reikšmes ir išveskime rezultatą.
+
+    pridetiInt(sveikasisSkaicius) {
+        return this.sveikojiDalis += sveikasisSkaicius;
+    }
 }
