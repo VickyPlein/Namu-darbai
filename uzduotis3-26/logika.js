@@ -6,7 +6,7 @@ const rez = document.getElementById("rez");
 const skaiciuoti = () => {
     const x = xInput.valueAsNumber;
     const y = yInput.valueAsNumber;
-    const sum = (x / (y * 0.01) ** 2);
+    const sum = (x / (y * 0.01) ** 2).toFixed(2);
     rez.innerHTML = `KMI yra lygi: ${sum}`;
 }
 
