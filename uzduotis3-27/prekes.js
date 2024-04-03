@@ -7,7 +7,6 @@ o užsikraunant aplikacijai išsaugotas(jei toks egzistuoja) sąrašas būtų u�
 Aplikacijoje padarykite mygtuką visų prekių ištrynimui,
  taip pat padarykite prie kiekvienos prekės mygtuką "ištrinti" kurį paspaudus būtų panaikinama tik ta prekė.
 */
-
 //Pasiimam elementus iš HTML
 const nameInp = document.getElementById("name");
 const quantityInp = document.getElementById("quantity");
@@ -64,66 +63,3 @@ addBtn.onclick = addProduct;
 clearBtn.onclick = clear;
 
 loadProducts();
-
-//Pasiimame HTML elemtus iš DOM pagal ID
-
-/*
-const addBtn = document.getElementById("add_task");      //<button>
-const list = document.getElementById("tasks_list");      // <ul> - elementas
-const taskName = document.getElementById("task_name");   // <input>
-const taskNum = document.getElementById("task_num");
-const clearPrekes = document.getElementById("clear_prekes"); // <button> - išvalyti visą sąrašą
-
-// Kintamasis kuriame saugomos užduotys
-
-let prekes = [];
-
-const showPrekes = () => {
-    list.innerHTML = "";
-    prekes.forEach((p) => {
-        const newTask = document.createElement("li");
-        newTask.className = "list-group-item";
-        newTask.textContent = `${p.pavadinimas}${p.kiekis}`;
-        list.appendChild(newTask);
-    })
-}
-
-const addTask = () => {
-    const text = taskName.value;
-    const quantity = taskNum.value;
-
-    taskName.value = "";
-    taskNum.value = "";
-
-    prekes.push({
-        pavadinimas: text,
-        kiekis: quantity
-    });
-
-
-    taskName.value = "";
-
-    showPrekes();
-
-
-    localStorage.setItem("prekes", JSON.stringify(prekes));
-}
-
-
-const clearList = () => {
-    prekes = [];
-    localStorage.removeItem("prekes");
-    showPrekes();
-}
-
-addBtn.onclick = addTask;
-clearPrekes.onclick = clearList;
-
-const lsPrekes = localStorage.getItem('prekes');
-
-if (lsPrekes != null) {
-    prekes = JSON.parse(lsPrekes);
-    showPrekes();
-}
-
-*/
