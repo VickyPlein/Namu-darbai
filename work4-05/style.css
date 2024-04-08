@@ -5,6 +5,12 @@
     font-family: "Roboto", sans-serif;
 }
 
+.h2 {
+    font-size: 36px;
+}
+
+
+
 header {
     box-shadow: -1px 1px 3px -1px rgba(8, 8, 8, 0.29);
     -webkit-box-shadow: -1px 1px 3px -1px rgba(8, 8, 8, 0.29);
@@ -96,6 +102,7 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    min-height: 600px;
 }
 
 .absolute {
@@ -132,4 +139,39 @@ header {
 .btnInElipses:hover {
     background-color: #9A54BC;
     color: white;
+}
+
+.topBrandsIconContainer {
+    /* position: relative; */
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.iconsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+}
+
+.iconsContainer img {
+    width: 100px;
+}
+
+.howCollabHelpMainContainer {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.howHelpContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
