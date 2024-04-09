@@ -4,12 +4,9 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-
 .h2 {
     font-size: 36px;
 }
-
-
 
 header {
     box-shadow: -1px 1px 3px -1px rgba(8, 8, 8, 0.29);
@@ -133,7 +130,6 @@ header {
     color: #9A54BC;
     font-weight: 500;
     cursor: pointer;
-
 }
 
 .btnInElipses:hover {
@@ -172,6 +168,62 @@ header {
 
 .howHelpContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    align-items: flex-start;
+    margin-top: 8rem;
 }
+
+.paraContainer {
+    width: 30rem;
+    height: 27rem;
+   }
+
+.howHelpBtnContainer{    
+    width: 100%;
+    background-color: white;
+    padding: 0.5rem;
+    box-shadow: -1px 1px 3px -1px rgba(8, 8, 8, 0.29);
+        -webkit-box-shadow: -1px 1px 3px -1px rgba(8, 8, 8, 0.29);
+        -moz-box-shadow: -1px 1px 3px -1px rgba(8, 8, 8, 0.29);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+}
+
+.howHelpBtnContainer button {
+    width: 50%;
+    padding: 0.6rem;
+    border: none;
+    border: 2px solid white;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.howHelpBtnContainer button:hover {
+    background-color: #60267F;
+    color: white;
+    border: 2px solid color #9A54BC;
+    border-radius: 5px;
+}
+
+.howHelpAllTextContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 1.5rem auto;
+}
+
+.howHelpAllTextContainer p {
+    padding: 1rem;
+    background-color: #F2F2F2;
+    font-size: 14px;
+}
+
+.imgContainer img{ 
+    width: 15rem;
+ }
