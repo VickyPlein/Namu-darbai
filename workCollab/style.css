@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+
 .h2 {
     font-size: 36px;
 }
@@ -277,4 +278,43 @@ header {
 
  .card p {
      color: #60267f;
+ }
+ .bigCardsContainer {
+     margin-top: 150px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .bigCardsTopPara {
+     color: #A79D9D;
+     margin-top: 15px;
+ }
+
+ .monthYearContainer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 35px;
+     gap: 10px;
+ }
+
+ .monthYearContainer img {
+     width: 35px;
+
+ .monthly {
+     color: #A79D9D;
+ }
+
+ .yearly {
+     font-weight: 500;
+    color: #2B0236;
+ }
+
+ .discount {
+     font-size: 12px;
+     background-color: #FFE87A;
+     padding: 3px 4px;
+     border-radius: 5px;
  }
