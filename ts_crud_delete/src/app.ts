@@ -12,7 +12,7 @@ const phoneInput=<HTMLInputElement>document.getElementById("phone");
 const emailInput=<HTMLInputElement>document.getElementById("email");
 const addRegistrationButton=<HTMLButtonElement>document.getElementById("addRegistration");
 
-const loadDataButton=<HTMLButtonElement>document.getElementById("loadData");
+// const loadDataButton=<HTMLButtonElement>document.getElementById("loadData");
 // const dataTableBody=<HTMLElement>document.getElementById("dataTableBody");
 
 // const dataTable=<HTMLElement>document.getElementById("dataTable");
@@ -168,6 +168,6 @@ addRegistrationButton.onclick=()=>{
 //     });
 // }
 
-loadDataButton.onclick=loadData;
+//loadDataButton.onclick=loadData;
 
 loadData();

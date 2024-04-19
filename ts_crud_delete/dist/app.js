@@ -8,7 +8,7 @@ const femaleInput = document.getElementById('female');
 const phoneInput = document.getElementById("phone");
 const emailInput = document.getElementById("email");
 const addRegistrationButton = document.getElementById("addRegistration");
-const loadDataButton = document.getElementById("loadData");
+// const loadDataButton=<HTMLButtonElement>document.getElementById("loadData");
 // const dataTableBody=<HTMLElement>document.getElementById("dataTableBody");
 // const dataTable=<HTMLElement>document.getElementById("dataTable");
 // const editForm=<HTMLElement>document.getElementById("editForm");
@@ -133,5 +133,5 @@ addRegistrationButton.onclick = () => {
 //         console.log(registrationData);
 //     });
 // }
-loadDataButton.onclick = loadData;
+//loadDataButton.onclick=loadData;
 loadData();
