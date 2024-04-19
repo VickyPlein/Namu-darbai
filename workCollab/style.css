@@ -9,6 +9,16 @@
     width: 850px;
  }
 
+
+ /* .flex {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 50px;
+     margin-top: 100px;
+ } */
+
 .h2 {
     font-size: 36px;
 }
@@ -427,13 +437,69 @@ header {
 
  .starsPara::before {
      font-family: "bootstrap-icons";
-     content: '\F12F';
+     content: "\F12F";
+    font-size: 50px;
+     margin-right: 160px;
  }
 
  .starsPara::after {
      font-family: "bootstrap-icons";
-     content: '\F138';
+     content: "\F138";
+     font-size: 50px;
+     margin-right:  160px;
  }
+
+ .snakeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 100px;
+    text-align: center;
+    }
+
+ .snakeContainer button {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #9A54BC;
+    border-radius: 5px;
+    color: #9A54BC;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+ }
+
+.snakeContainer button:hover {
+    background-color: white;
+    color: #9A54BC;
+}
+
+.snakeImgContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.snakeImgContainer img {
+    position: absolute;
+}
+
+.line {
+    min-width: 1100px;
+    margin-top:  200px;
+}
+
+.face1 {
+    top: -30px;
+    left: -20px;
+}
+.face2 {
+    top: 150px;
+    left: 150px;
+}
 
 /*
  .bigThreeCardsContainer {
